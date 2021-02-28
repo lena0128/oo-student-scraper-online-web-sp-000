@@ -5,9 +5,8 @@ class Student
   @@all = []
 
   def initialize(student_hash)
-    student_hash.each do |key, value|
-      self.send("#{key}=", value)
-    end
+    # Use meta-programming to instantiate new instances of a class and add attributes to instances of a class.
+    student_hash.each { |key, value| self.send("#{key}=", value) }
     @@all << self
   end
 
