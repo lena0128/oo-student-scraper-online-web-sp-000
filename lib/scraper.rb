@@ -14,7 +14,7 @@ class Scraper
       }
       student_info << student_hash
   end
-  student_hash
+  student_info
 end
 
   def self.scrape_profile_page(profile_url)
