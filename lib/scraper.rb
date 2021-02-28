@@ -10,7 +10,7 @@ class Scraper
       student_hash = {
         name: student.css("h4.student-name").text,
         location: student.css("p.student_location").text
-        profile_url: "https://learn-co-curriculum.github.io/student-scraper-test-page/students/" + student.css("a").attribute("href")
+        profile_url: "http://students.learn.co/" + student.css("a").attribute("href")
       }
       student_info << student_hash
   end
