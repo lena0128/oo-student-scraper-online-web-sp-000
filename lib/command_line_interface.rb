@@ -26,7 +26,7 @@ class CommandLineInterface
 
   def display_students
     Student.all.each do |student|
-      puts "#{student.name.upcase}".colorize(:orange)
+      puts "#{student.name.upcase}".colorize(:light_magenta)
       puts "  location:".colorize(:light_blue) + " #{student.location}"
       puts "  profile quote:".colorize(:light_blue) + " #{student.profile_quote}"
       puts "  bio:".colorize(:light_blue) + " #{student.bio}"
