@@ -12,9 +12,9 @@ class Scraper
         location: card.css("p.student_location").text,
         profile_url: "http://students.learn.co/#{card.css("a").attribute("href").value}"
       }
-      student_info << student_hash
+      students_info << student_hash
   end
-  student_info
+  students_info
 end
 
 def self.scrape_profile_page(profile_url)
